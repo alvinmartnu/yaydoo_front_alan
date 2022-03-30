@@ -22,6 +22,13 @@ en donde veran la siguiente pantalla
 
 # Cada uno de los menus da acceso a los desafios de programacion solicitados y la respuesta a las preguntas teoricas.
 
+![image](https://user-images.githubusercontent.com/102509013/160893357-5f47aa57-644d-42b8-9102-e729f0ab4cc9.png)
+
+![image](https://user-images.githubusercontent.com/102509013/160893404-4602721f-88a1-46c3-bca1-aed7553b1014.png)
+
+
+
+
 Nota: es importante que tengas intalado node, npm y angular cli como requisito.
 
 Nota 2: de igual manera es necesario haber levantado previamente el back, para poder utilizar el front.
