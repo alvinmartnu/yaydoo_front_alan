@@ -2,26 +2,30 @@
 
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-## Development server
+## Correr Front
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para correr el front se necesita descargar el proyecto posicionarte dentro de la carpeta y ejecutar el comando npm install; 
 
-## Code scaffolding
+![image](https://user-images.githubusercontent.com/102509013/160892430-05a42ab2-8067-4046-9a07-99fcf45abe71.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+una vez que termine de instalar las librerias, se procede a ejecutar el comando ng serve y deberian  ver algo como esto
 
-## Build
+![image](https://user-images.githubusercontent.com/102509013/160892836-667ba514-4b7d-43a9-8601-aeed18886500.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+una vez ejecutado el comando y arriba el front pueden entrar a la pagina http://localhost:4200/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+en donde veran la siguiente pantalla
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![image](https://user-images.githubusercontent.com/102509013/160893067-072e383a-e3ed-4dbe-ad57-7bbf55652fa3.png)
 
-## Further help
+# Cada uno de los menus da acceso a los desafios de programacion solicitados y la respuesta a las preguntas teoricas.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Nota: es importante que tengas intalado node, npm y angular cli como requisito.
+
+Nota 2: de igual manera es necesario haber levantado previamente el back, para poder utilizar el front.
+
+
+
+
