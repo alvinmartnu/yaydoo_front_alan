@@ -1,0 +1,29 @@
+<div class="card" style="padding: 5%;" [hidden]="loading">
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="md-form">
+                <textarea #textbox (change)="textCuenta = textbox.value" type="text" placeholder="Introduzca el texto porfavor........." class="md-textarea form-control" mdbInput>{{textCuenta}}</textarea>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row" style="padding-top: 10px;">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-5">
+            <button class="btn btn-primary" (click)="validaInfo()">Cuenta Palabras</button>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+    <ngb-alert style="padding-top: 20px;" [hidden]="!isError" type='danger' (closed)="close()">{{ message }}</ngb-alert>
+
+</div>
+
+<div class="card" style="padding: 5%;" [hidden]="loading" [hidden]="!isResult">
+    <pre><p>{{result | json}}</p></pre>
+</div>
+
+<mat-spinner [hidden]="!loading" style="text-align: center;"></mat-spinner>

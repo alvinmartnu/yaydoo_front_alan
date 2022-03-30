@@ -1,0 +1,73 @@
+<div class="card" style="padding: 5%;" [hidden]="loading">
+
+        <div class="row" >
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+                <input id="typeahead-basic" type="text" class="form-control" placeholder="Nombre Participante 1"
+                    [(ngModel)]="userUno" />
+            </div>
+            <div class="col-md-5">
+                <input id="typeahead-basic" type="text" class="form-control" placeholder="Nombre Participante 2"
+                    [(ngModel)]="userDos" />
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+                <input id="typeahead-basic" type="number" class="form-control" placeholder="Calicacion 1 de {{userUno}}"
+                    min="1" max="100" [(ngModel)]="num1Uno" />
+            </div>
+            <div class="col-md-5">
+                <input id="typeahead-basic" type="number" class="form-control" placeholder="Calicacion 1 de {{userDos}}"
+                    min="1" max="100" [(ngModel)]="num1Dos" />
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+                <input id="typeahead-basic" type="number" class="form-control" placeholder="Calicacion 2 de {{userUno}}"
+                    min="1" max="100" [(ngModel)]="num2Uno" />
+            </div>
+            <div class="col-md-5">
+                <input id="typeahead-basic" type="number" class="form-control" placeholder="Calicacion 2 de {{userDos}}"
+                    min="1" max="100" [(ngModel)]="num2Dos" />
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-5">
+                <input id="typeahead-basic" type="number" class="form-control" placeholder="Calicacion 3 de {{userUno}}"
+                    min="1" max="100" [(ngModel)]="num3Uno" />
+            </div>
+            <div class="col-md-5">
+                <input id="typeahead-basic" type="number" class="form-control" placeholder="Calicacion 3 de {{userDos}}"
+                    min="1" max="100" [(ngModel)]="num3Dos" />
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-5">
+                <button class="btn btn-primary" (click)="validaInfo()">Compara</button>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+            <ngb-alert style="padding-top: 20px;" [hidden]="!isError" type='danger' (closed)="close()">{{ message }}</ngb-alert>
+            <ngb-alert style="padding-top: 15px;" [hidden]="!isCorrect" type='success' (closed)="close()">{{ message }}</ngb-alert>
+        
+</div>
+
+<mat-spinner [hidden]="!loading" style="text-align: center;"></mat-spinner>
